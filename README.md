@@ -31,12 +31,13 @@ Commands are used by flags:
 Instructions
 -
 
-| Command | Usage                     | Format                         |
-|---------|---------------------------|--------------------------------|
-| ,       | Println                   | ,\<Text/Variable>              |
-| .       | Print                     | .\<Text/Value>                 |
-| ^       | Set variable              | ^<var_name>#Value              |
-| -       | Subtracts from a variable | -<var_name>#<other_var/number> |
-| +       | Adds to a variable        | +<var_name>#<other_var/number> |
-| *       | Multiplies a variable     | *<var_name>#<other_var/number> |
-| /       | Divides a variable        | /<var_name>#<other_var/number> |
+| Command | Usage                     | Format                                                   |
+|---------|---------------------------|----------------------------------------------------------|
+| ,       | Println                   | ,\<Text/Variable>                                        |
+| .       | Print                     | .\<Text/Value>                                           |
+| ^       | Set variable              | ^<var_name>#Value                                        |
+| -       | Subtracts from a variable | -<var_name>#<other_var/number>                           |
+| +       | Adds to a variable        | +<var_name>#<other_var/number>                           |
+| *       | Multiplies a variable     | *<var_name>#<other_var/number>                           |
+| /       | Divides a variable        | /<var_name>#<other_var/number>                           |
+| ?       | Simpele if line           | ?<!=/==>\<variable>#\<value_to_test>#<command_when_true> |
