@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/AureumApes/siec-language/cmd"
+	"github.com/AureumApes/siec/cmd"
 )
 
 func main() {
