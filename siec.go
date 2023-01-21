@@ -6,12 +6,15 @@ import (
 )
 
 func main() {
-	run := flag.Bool("run", true, "")
-	// compile := flag.Bool("compile", true, "")
+	run := flag.Bool("run", false, "")
+	compile := flag.Bool("compile", true, "")
 	flag.Parse()
+	instructions := cmd.LoadInstructions()
+	code := cmd.LoadCode()
+	if *compile {
+		cmd.CompileCode(instructions, code)
+	}
 	if *run {
-		instructions := cmd.LoadInstructions()
-		code := cmd.LoadCode()
 		cmd.ExecuteCode(instructions, code)
 	}
 }
