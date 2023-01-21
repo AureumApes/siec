@@ -1,7 +1,7 @@
 package internal
 
 import (
-	goutil "github.com/AureumApes/goutil"
+	"github.com/AureumApes/goutil"
 	"strconv"
 	"strings"
 )
