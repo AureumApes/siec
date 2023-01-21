@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/AureumApes/siec-language/internal"
+import "github.com/AureumApes/siec/internal"
 
 func ExecuteCode(instructions []int64, code []string) {
 	var instructedCode []string
