@@ -24,6 +24,8 @@ func ExecuteCommand(command string, vars map[string]string) map[string]string {
 		if ifTrue, ifCode := internal.If(command[1:], vars); ifTrue {
 			vars = ExecuteCommand(ifCode, vars)
 		}
+	case '~':
+		vars = internal.Input(command[1:], vars)
 	}
 	return vars
 }

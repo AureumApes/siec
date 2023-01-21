@@ -7,7 +7,7 @@ import (
 
 func main() {
 	run := flag.Bool("run", false, "")
-	build := flag.Bool("build", true, "")
+	build := flag.Bool("build", false, "")
 	runbuild := flag.String("runbuild", "", "")
 	flag.Parse()
 	instructions := cmd.LoadInstructions()

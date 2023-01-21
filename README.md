@@ -41,3 +41,4 @@ Instructions
 | *       | Multiplies a variable     | *<var_name>#<other_var/number>                           |
 | /       | Divides a variable        | /<var_name>#<other_var/number>                           |
 | ?       | Simpele if line           | ?<!=/==>\<variable>#\<value_to_test>#<command_when_true> |
+| ~       | Saves input to a variable | ~\<variable>                                             |
