@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	goutil "github.com/AureumApes/goutil"
+	"github.com/AureumApes/goutil"
 	"os"
 	"strings"
 )
