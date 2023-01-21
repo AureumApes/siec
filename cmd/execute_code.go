@@ -16,6 +16,8 @@ func ExecuteCode(instructions []int64, code []string) {
 			internal.Println(command[1:], vars)
 		case '^':
 			vars = internal.Set(command[1:], vars)
+		case '-':
+			vars = internal.Subtraction(command[1:], vars)
 		}
 	}
 	return
