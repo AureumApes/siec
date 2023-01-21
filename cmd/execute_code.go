@@ -18,6 +18,12 @@ func ExecuteCode(instructions []int64, code []string) {
 			vars = internal.Set(command[1:], vars)
 		case '-':
 			vars = internal.Subtraction(command[1:], vars)
+		case '+':
+			vars = internal.Addition(command[1:], vars)
+		case '/':
+			vars = internal.Division(command[1:], vars)
+		case '*':
+			vars = internal.Multiplication(command[1:], vars)
 		}
 	}
 	return
