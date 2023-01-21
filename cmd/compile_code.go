@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	goutil "github.com/AureumApes/goutil"
 	"os"
 	"strings"
 )
@@ -11,5 +12,5 @@ func CompileCode(instructions []int64, code []string) {
 		instructedCode = append(instructedCode, code[instruction-1])
 	}
 	instructedString := strings.Join(instructedCode, "\n")
-	os.WriteFile("compiled.scc", []byte(instructedString), os.ModePerm)
+	os.WriteFile("compiled.scc", []byte(goutil.Encrypt([]rune("siec"), instructedString)), os.ModePerm)
 }

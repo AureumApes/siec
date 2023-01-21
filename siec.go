@@ -7,11 +7,15 @@ import (
 
 func main() {
 	run := flag.Bool("run", false, "")
-	compile := flag.Bool("compile", true, "")
+	build := flag.Bool("build", true, "")
+	runbuild := flag.String("runbuild", "", "")
 	flag.Parse()
 	instructions := cmd.LoadInstructions()
 	code := cmd.LoadCode()
-	if *compile {
+	if *runbuild != "" {
+		cmd.Decompile(*runbuild)
+	}
+	if *build {
 		cmd.CompileCode(instructions, code)
 	}
 	if *run {
