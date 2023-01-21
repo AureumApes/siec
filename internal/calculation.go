@@ -1,7 +1,7 @@
 package internal
 
 import (
-	GoUtils "github.com/AureumApes/goutil"
+	"github.com/AureumApes/goutil"
 	"strconv"
 	"strings"
 )
@@ -12,11 +12,11 @@ func Subtraction(cmd string, vars map[string]string) map[string]string {
 	if !exists {
 		panic(splitCmd[0] + ": Variable does not exist")
 	}
-	if !GoUtils.IsNumeric(var1) {
+	if !goutil.IsNumeric(var1) {
 		panic(splitCmd[0] + ": Variable is not numeric")
 	}
 	var2, exists2 := vars[splitCmd[1]]
-	if !exists2 && !GoUtils.IsNumeric(splitCmd[1]) {
+	if !exists2 && !goutil.IsNumeric(splitCmd[1]) {
 		panic(splitCmd[1] + ": is not a variable nor numeric")
 	}
 	if exists2 {
@@ -39,11 +39,11 @@ func Addition(cmd string, vars map[string]string) map[string]string {
 	if !exists {
 		panic(splitCmd[0] + ": Variable does not exist")
 	}
-	if !GoUtils.IsNumeric(var1) {
+	if !goutil.IsNumeric(var1) {
 		panic(splitCmd[0] + ": Variable is not numeric")
 	}
 	var2, exists2 := vars[splitCmd[1]]
-	if !exists2 && !GoUtils.IsNumeric(splitCmd[1]) {
+	if !exists2 && !goutil.IsNumeric(splitCmd[1]) {
 		panic(splitCmd[1] + ": is not a variable nor numeric")
 	}
 	if exists2 {
@@ -66,11 +66,11 @@ func Multiplication(cmd string, vars map[string]string) map[string]string {
 	if !exists {
 		panic(splitCmd[0] + ": Variable does not exist")
 	}
-	if !GoUtils.IsNumeric(var1) {
+	if !goutil.IsNumeric(var1) {
 		panic(splitCmd[0] + ": Variable is not numeric")
 	}
 	var2, exists2 := vars[splitCmd[1]]
-	if !exists2 && !GoUtils.IsNumeric(splitCmd[1]) {
+	if !exists2 && !goutil.IsNumeric(splitCmd[1]) {
 		panic(splitCmd[1] + ": is not a variable nor numeric")
 	}
 	if exists2 {
@@ -93,11 +93,11 @@ func Division(cmd string, vars map[string]string) map[string]string {
 	if !exists {
 		panic(splitCmd[0] + ": Variable does not exist")
 	}
-	if !GoUtils.IsNumeric(var1) {
+	if !goutil.IsNumeric(var1) {
 		panic(splitCmd[0] + ": Variable is not numeric")
 	}
 	var2, exists2 := vars[splitCmd[1]]
-	if !exists2 && !GoUtils.IsNumeric(splitCmd[1]) {
+	if !exists2 && !goutil.IsNumeric(splitCmd[1]) {
 		panic(splitCmd[1] + ": is not a variable nor numeric")
 	}
 	if exists2 {
