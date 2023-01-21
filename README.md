@@ -1,7 +1,7 @@
 Siec
 ===
 
-An interpreted Esoteric Programming Language 
+An interpreted Esoteric Programming Language
 
 Project Setup
 -
@@ -12,12 +12,25 @@ Each Line Number can only have 2 Digits. This means that your code.sc is limited
 
 Benefits
 -
+
 * Easy to understand syntax
 * Control over Execution via ins.sc
 * Variable Names with whitespaces
 
 Commands
 -
+Commands are used by flags:
+
+| Flag      | Usage                                       | Format                 |
+|-----------|---------------------------------------------|------------------------|
+| -run      | Runs code.sc with inst.sc                   | siec -run              |
+| -build    | Builds code.sc with inst.sc to compiled.scc | siec -build            |
+| -runbuild | Runs a builded .scc file                    | siec -runbuild \<file> |
+
+
+Instructions
+-
+
 | Command | Usage                     | Format                         |
 |---------|---------------------------|--------------------------------|
 | ,       | Println                   | ,\<Text/Variable>              |
